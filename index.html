@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Adicione uma tarefa</h1>
+        </header>
+        <div class="dflex-column">
+            <input class="entrada" id="inserirTarefa" type="text" placeholder="Digite uma nova tarefa aqui" required>
+            <button class="add" id="adicionarTarefa">ADD</button>
+        </div>
+
+        <div id="listaDeTarefas"></div>
+
+        <footer id="adicionarBotoes" class="dflex botoes">
+            <button class="concluir" id="concluirTudo">Concluir tudo</button>
+            <button class="apagar" id="apagarTudo">Apagar tudo</button>
+        </footer>
+    </div>
+
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
