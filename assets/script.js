@@ -5,6 +5,14 @@ let concluirTudo = document.getElementById('concluirTudo')
 let apagarTudo = document.getElementById('apagarTudo')
 let dragging
 
+// Listener for Enter (Return) press to start events
+document.querySelector('#inserirTarefa').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) { // 13 is enter
+        adicionarTarefa.click();
+    }
+});
+
 adicionarTarefa.addEventListener('click', function () {
 
     if (inserirTarefa.value == false) {
