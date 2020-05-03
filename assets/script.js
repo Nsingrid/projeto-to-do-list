@@ -15,8 +15,8 @@ document.querySelector('#inserirTarefa').addEventListener('keypress', function (
 
 adicionarTarefa.addEventListener('click', function () {
 
-    if (inserirTarefa.value == false) {
-        return
+    if (inserirTarefa.value == "") {
+        return alert('Por favor, para continuar digite algum item para a sua lista')
     }
 
     let listaDeTarefas = document.getElementById('listaDeTarefas')
@@ -50,12 +50,12 @@ adicionarTarefa.addEventListener('click', function () {
 
     tarefa.addEventListener('click', function () {
         tarefa.classList.toggle('check');
-    })
+    });
 
     divDrag.addEventListener("dragstart", function (ev) {
         dragging = ev.target.closest(".div-drag")
 
-    })
+    });
 
     divDrag.addEventListener("dragover", function (ev) {
         ev.preventDefault();
@@ -65,11 +65,11 @@ adicionarTarefa.addEventListener('click', function () {
 
     divDrag.addEventListener("dragend", function (ev) {
         dragging = null
-    })
+    });
 
     concluirTudo.addEventListener('click', function () {
         tarefa.classList.add('check');
-    })
+    });
 
     apagarTudo.addEventListener('click', function () {
         // tarefa.remove()
